@@ -25,3 +25,22 @@ with open(csvpath, newline='') as csvfile:
 
         voterID += 1
 
+        #Add to voterID list.
+        total_votes.append(voterID)
+    len(total_votes)
+    print(len(total_votes))
+    
+   
+
+#A complete list of candidates who received votes
+    
+    
+    for row in csvreader:
+        #Add candidate to candidate_list
+        candidate_list.append(row[2])
+        #Remove the duplicates
+        candidates = []
+        for candidate in candidate_list:
+            if candidate not in candidates:
+                candidates.append(candidate)
+            print(candidates)   
