@@ -3,7 +3,6 @@ import os
 import csv
 
 #Import CSV file
-csvpath =os.path.join("PyPoll", "election_data_1.csv")
 csvpath =os.path.join("PyPoll", "election_data_2.csv")
 
 #make list to store votes
@@ -44,3 +43,76 @@ with open(csvpath, newline='') as csvfile:
             if candidate not in candidates:
                 candidates.append(candidate)
             print(candidates)   
+            
+    #The total number of votes each candidate won
+    #Correy
+    correy = 0
+    correy_total =[]
+    for row in csvreader:
+        #Vote count for Correy.
+        correy += 1 
+        #Add to Correy vote total.
+        correy_total.append(correy)
+
+     #Khan
+     khan = 0
+     khan_total =[]
+     for row in csvreader:
+        #Vote count for Khan.
+        khan += 1 
+        #Add to Khan vote total.
+        khan_total.append(khan)
+
+     #Li
+     li = 0
+     li_total =[]
+     for row in csvreader:
+        #Vote count for Li.
+        li += 1 
+        #Add to Li vote total.
+        li_total.append(li)
+
+     #O'Tooley
+     otooley = 0
+     otooley_total =[]
+     for row in csvreader:
+        #Vote count for Correy.
+        otooley += 1 
+        #Add to O'Tooley vote total.
+        otooley_total.append(otooley)
+
+#The percentage of votes each candidate won
+#Correy vote percentage.
+percentageC = correy/voterID
+#Add to vote percentage list.
+vote_percentage.append(percentageC)
+#Khan vote percentage.
+percentageK = khan/voterID
+#Add to vote percentage list.
+vote_percentage.append(percentageK)
+#Li vote percentage.
+percentageL = li/voterID
+#Add to vote percentage list.
+vote_percentage.append(percentageL)
+#O'Tooley vote percentage
+percentageO = otooley/voterID 
+
+
+#The winner of the election based on popular vote.
+
+totalVotes = {
+  
+}
+
+#Write data to file.
+
+#Specify the file to write to.
+#output_file = open("election_data_final.txt", "w")
+
+# Write the header row
+    #writer.writerow(["Total Votes","Candidates"])
+    # Write in zipped rows
+    #writer.writerows(total_votes,candidates)
+    
+    
+    
